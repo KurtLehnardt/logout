@@ -16,9 +16,10 @@
 </body>
 <script>
 function unauthorizedLoginAttempt(){
-	  swal("Unauthorized", {
+	  swal({
+	  title: "Unauthorized",
 	  buttons: false,
-          icon: "warning",
+          icon: "error",
 	  timer: 2000,
 	  closeOnEsc: true,
 	  closeOnClickOutside: true
