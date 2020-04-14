@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+	<title>Login to device</title>
+	<meta authors="Benjamin Eccles, Rachel Laub, Kurt Lehnardt">
+	<meta charset="UTF-8">
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body style="overflow: hidden; background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%), linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%), linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%); height: 100vh; width: 100%; padding-top: 10%;">
+	<div style="text-align: center" >
+		<h1>Please place your card on the reader to log in</h1>
+		<div>
+			<img style="width: 200px; height: 200px" id='loginImage' src="https://scrummy-bears.s3.amazonaws.com/nfc.png">
+		</div>
+	</div>
+</body>
+<script>	
+function unauthorizedLoginAttempt(){	
+	  swal({	
+	  title: "Unauthorized",	
+	  buttons: false,	
+    icon: "error",	
+	  timer: 3000,	
+	  closeOnEsc: true,	
+	  closeOnClickOutside: true	
+	})	
+}	
+unauthorizedLoginAttempt()	
+</script>
+</html>
