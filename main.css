@@ -1,0 +1,11 @@
+body {
+  overflow: hidden; 
+  background: linear-gradient(135deg, #C53494 0%, #52C0D3 100%); 
+  height: 100vh; 
+  width: 100%; 
+  padding-top: 10%;
+ }
+ 
+ div {
+  text-align: center;
+ }
